@@ -1,0 +1,19 @@
+{
+    "extends":["rocketseat/eslint-config/react"],
+    "plugins":["simple-import-sort"],
+    "rules": {
+        "simple-import-sort/imports": [
+            "error",
+            {
+                "groups": [
+                    ["^react", "^@?\\w"],
+                    ["^\\u0000"]
+                ]
+            }
+        ],
+        "simple-import-sort/exports": "error",
+        "import/order": "off",
+        "import/newline-after-import": "off",
+        "import/first": "off"
+    }
+}
