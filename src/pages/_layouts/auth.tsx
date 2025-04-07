@@ -9,7 +9,7 @@ export default function AuthLayout() {
         {/* Topo */}
         <div className="flex items-center gap-3 text-lg font-medium text-foreground">
           <Landmark className="h-5 w-5" />
-          <span className="font-semibold">Loan-x</span>
+          <span className="font-semibold">LoanX</span>
         </div>
 
         {/* Footer no desktop */}
