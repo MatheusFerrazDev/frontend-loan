@@ -7,6 +7,7 @@ import { z } from "zod";
 import { Helmet } from "react-helmet-async";
 // Importa funções e tipos do react-hook-form para lidar com formulários
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -34,6 +35,8 @@ type SignUpForm = z.infer<typeof SignUpForm>;
 
 // ✅ 3. Componente de Registro
 export function Register() {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit, // Envia o formulário com os dados validados
@@ -50,7 +53,14 @@ export function Register() {
       // Simula uma requisição (exemplo)
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
-      toast.success("Cadastro realizado com sucesso!");
+      toast.success("Cadastro realizado com sucesso!", {
+        action: {
+          label: "Login",
+          onClick: () => {
+            navigate("/sign-in");
+          },
+        },
+      });
     } catch {
       toast.error("Erro ao realizar cadastro.");
     }
