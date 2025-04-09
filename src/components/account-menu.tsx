@@ -23,7 +23,7 @@ export function AccountMenu() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-56 ">
-        <DropdownMenuLabel className="flex flex-col ">
+        <DropdownMenuLabel className="flex flex-col">
           <span>Matheus Ferraz</span>
           <span className="text-xs font-normal text-muted-foreground">
             contatomatheus.oferraz@gmail.com

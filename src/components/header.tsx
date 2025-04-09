@@ -9,17 +9,17 @@ export function Header() {
   return (
     <div className="border-b">
       <div className="flex h-16 items-center md:gap-6 md:px-6 gap-4 px-6">
-        <Landmark className="md:h-6 md:w-6" />
+        <Landmark className="hidden sm:flex md:h-6 md:w-6" />
 
         <Separator orientation="vertical" className="md:h-6" />
 
-        <nav className="flex items-center space-x-4 md:space-x-4 lg:space-x-6">
+        <nav className="flex items-center whitespace-nowrap space-x-4 md:space-x-4 lg:space-x-6">
           <NavLink to="/">
             <Home className="h-4 w-4" />
             Início
           </NavLink>
-          <NavLink to="">
-            <Contact className="h-4 w-4" />
+          <NavLink to="/clients">
+            <Contact className=" h-4 w-4 " />
             Lista de clientes
           </NavLink>
         </nav>

@@ -7,35 +7,26 @@ import { ForgotPassword } from "./pages/auth/forgot-password";
 import { ResetPassword } from "./pages/auth/reset-password";
 import { SignIn } from "./pages/auth/sign-in";
 import { Register } from "./pages/auth/sign-up";
+import { Clients } from "./pages/clients/clients";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
-    children: [{ path: "/", element: <Dashboard /> }],
+    children: [
+      { path: "/", element: <Dashboard /> },
+      { path: "/clients", element: <Clients /> },
+    ],
   },
 
   {
     path: "/",
     element: <AuthLayout />,
-    children: [{ path: "/sign-in", element: <SignIn /> }],
-  },
-
-  {
-    path: "/",
-    element: <AuthLayout />,
-    children: [{ path: "/sign-up", element: <Register /> }],
-  },
-
-  {
-    path: "/",
-    element: <AuthLayout />,
-    children: [{ path: "/forgot-password", element: <ForgotPassword /> }],
-  },
-
-  {
-    path: "/",
-    element: <AuthLayout />,
-    children: [{ path: "/reset-password", element: <ResetPassword /> }],
+    children: [
+      { path: "/sign-in", element: <SignIn /> },
+      { path: "/sign-up", element: <Register /> },
+      { path: "/forgot-password", element: <ForgotPassword /> },
+      { path: "/reset-password", element: <ResetPassword /> },
+    ],
   },
 ]);
