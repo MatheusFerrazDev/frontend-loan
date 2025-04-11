@@ -1,15 +1,43 @@
 import { Search, Trash2, UserCog } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { TableCell, TableRow } from "@/components/ui/table";
+
+import { ClientDetails } from "./client-details";
 
 export function ClientsTableRow() {
   return (
     <TableRow>
       <TableCell>
-        <Button variant="outline" size="xs">
-          <Search className="h-3 w-3" />
-        </Button>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button variant="outline" size="xs">
+              <Search className="h-3 w-3" />
+            </Button>
+          </DialogTrigger>
+          <ClientDetails
+            id={""}
+            name={" "}
+            email={""}
+            cpf={""}
+            phone={""}
+            adress={""}
+            value={0}
+            loanInterest={0}
+            installments={0}
+            installmentsPaid={0}
+            lateInstallments={0}
+            valuePaid={0}
+            monthlyPaid={0}
+            loanDate={""}
+            nextPaymentDate={""}
+            lastPaymentDate={""}
+            monthlyFeePaid={false}
+            totalDebtPaid={false}
+            observations={""}
+          />
+        </Dialog>
       </TableCell>
       <TableCell className="text-sm font-medium">Matheus Ferraz</TableCell>
       <TableCell>R$ 2500,00</TableCell>

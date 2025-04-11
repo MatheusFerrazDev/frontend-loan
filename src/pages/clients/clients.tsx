@@ -36,7 +36,9 @@ export function Clients() {
             </TableRow>
           </TableHeader>
           <TableBody>
-            <ClientsTableRow />
+            {Array.from({ length: 10 }).map((_, i) => (
+              <ClientsTableRow key={i} />
+            ))}
           </TableBody>
         </Table>
       </div>
