@@ -36,7 +36,7 @@ export function AccountMenu() {
         </DropdownMenuItem>
         <DropdownMenuItem className="text-rose-500 dark:text-rose-400">
           <LogOut className="mr-2 h-4 w-4" />
-          <a href="">Sair</a>
+          <a href="/sign-in">Sair</a>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

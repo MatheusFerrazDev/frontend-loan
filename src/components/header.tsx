@@ -8,7 +8,7 @@ import { Separator } from "./ui/separator";
 export function Header() {
   return (
     <div className="border-b">
-      <div className="flex h-16 items-center md:gap-6 md:px-6 gap-4 px-6">
+      <div className="flex h-16 items-center md:gap-6 md:px-6 gap-4 px-8 ">
         <Landmark className="hidden sm:flex md:h-6 md:w-6" />
 
         <Separator orientation="vertical" className="md:h-6" />

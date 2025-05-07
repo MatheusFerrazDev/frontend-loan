@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router";
 
 import AppLayout from "./pages/_layouts/app";
 import AuthLayout from "./pages/_layouts/auth";
-import { Dashboard } from "./pages/app/dashboard/dashboard";
+import { Dashboard } from "./pages/app/dashboard";
 import { ForgotPassword } from "./pages/auth/forgot-password";
 import { ResetPassword } from "./pages/auth/reset-password";
 import { SignIn } from "./pages/auth/sign-in";

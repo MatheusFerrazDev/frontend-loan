@@ -172,8 +172,12 @@ export function ClientDetails(props: ClientDetailsProps) {
               <TableCell className="flex justify-end">
                 <div className="flex items-center gap-2">
                   <span className="font-medium ">
-                    <Checkbox className="mr-5">Sim</Checkbox>
-                    <Checkbox className="">Não</Checkbox>
+                    <Checkbox className="mr-5" disabled>
+                      Sim
+                    </Checkbox>
+                    <Checkbox className="" disabled>
+                      Não
+                    </Checkbox>
                   </span>
                 </div>
               </TableCell>
@@ -185,8 +189,10 @@ export function ClientDetails(props: ClientDetailsProps) {
               <TableCell className="flex justify-end">
                 <div className="flex items-center gap-2">
                   <span className="font-medium ">
-                    <Checkbox className="mr-5">Sim</Checkbox>
-                    <Checkbox>Não</Checkbox>
+                    <Checkbox className="mr-5" disabled>
+                      Sim
+                    </Checkbox>
+                    <Checkbox disabled>Não</Checkbox>
                   </span>
                 </div>
               </TableCell>
